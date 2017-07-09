@@ -51,19 +51,16 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     progressBar.setVisibility(View.VISIBLE);
                     GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search?section=technology&api-key=test";
                     getLoaderManager().restartLoader(NEWS_LOADER_ID, null, MainActivity.this);
-                    Log.d(MG_TAG, "tech");
                     return true;
                 case R.id.navigation_sport:
                     progressBar.setVisibility(View.VISIBLE);
                     GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search?section=sport&api-key=test";
                     getLoaderManager().restartLoader(NEWS_LOADER_ID, null, MainActivity.this);
-                    Log.d(MG_TAG, "sport");
                     return true;
                 case R.id.navigation_environment:
                     progressBar.setVisibility(View.VISIBLE);
                     GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search?section=environment&api-key=test";
                     getLoaderManager().restartLoader(NEWS_LOADER_ID, null, MainActivity.this);
-                    Log.d(MG_TAG, "env");
                     return true;
             }
             return false;
@@ -115,6 +112,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        getLoaderManager().restartLoader(NEWS_LOADER_ID, null, MainActivity.this);
     }
 
     @Override
