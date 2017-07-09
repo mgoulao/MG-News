@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_tech"
+        android:icon="@drawable/ic_computer_24dp"
+        android:title="@string/title_tech" />
+
+    <item
+        android:id="@+id/navigation_sport"
+        android:icon="@drawable/ic_bike_24dp"
+        android:title="@string/title_sport" />
+
+    <item
+        android:id="@+id/navigation_environment"
+        android:icon="@drawable/ic_cloud_circle_24dp"
+        android:title="@string/title_environment" />
+
+</menu>

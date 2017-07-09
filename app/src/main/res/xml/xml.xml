@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/filters_title">
+    <ListPreference
+        android:key="@string/filters_order_by_key"
+        android:title="@string/filters_order_by_label"
+        android:dialogTitle="@string/filters_order_by_label"
+        android:entries="@array/filters_order_by_entries"
+        android:entryValues="@array/filters_order_by_values"
+        android:defaultValue="@string/filters_order_by_default" />
+    <Preference
+        android:key="@string/filters_from_date_key"
+        android:title="@string/filters_from_date_title"/>
+
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MG News</string>
+    <string name="title_tech">Tech</string>
+    <string name="title_sport">Sport</string>
+    <string name="title_environment">Environment</string>
+
+    <string name="offline">You are Offline</string>
+    <string name="no_results">No Results</string>
+
+    <string name="action_filter">Filter</string>
+    <!-- Settings Menu Item [CHAR LIMIT=NONE] -->
+    <string name="filters_menu_item">Settings</string>
+    <!-- Settings Activity Title [CHAR LIMIT=NONE] -->
+    <string name="filters_title">Filters</string>
+    <string name="filters_order_by_label">Order by</string>
+    <string name="filters_order_by_key" translatable="false">order_by</string>
+    <string name="filters_order_by_default" translatable="false">newest</string>
+
+    <array name="filters_order_by_entries">
+        <item>Newest</item>
+        <item>Oldest</item>
+        <item>Relevance</item>
+    </array>
+    <array name="filters_order_by_values">
+        <item>newest</item>
+        <item>oldest</item>
+        <item>relevance</item>
+    </array>
+    
+    <string name="filters_from_date_key">from_date</string>
+    <string name="filters_from_date_title">From Date</string>
+</resources>
