@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         } else {
             progressBar.setVisibility(View.INVISIBLE);
             offlineTextView.setText(getResources().getString(R.string.offline));
-            Toast.makeText(this, "Please check your connection", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please check your connection.", Toast.LENGTH_SHORT).show();
         }
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
